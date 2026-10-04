@@ -39,6 +39,18 @@ if (typeof REVIEWS_DATA !== 'undefined' && Array.isArray(REVIEWS_DATA)) {
     });
 }
 
+// Add standalone HTML posts from posts/ directory
+if (fs.existsSync('./posts')) {
+    const postFiles = fs.readdirSync('./posts').filter(f => f.endsWith('.html'));
+    postFiles.forEach(file => {
+        urls.push({
+            loc: `${baseUrl}/posts/${file}`,
+            priority: '0.8',
+            changefreq: 'weekly'
+        });
+    });
+}
+
 // Generate sitemap.xml content
 let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
