@@ -37,6 +37,7 @@ jobs:
       - name: Generate Sitemap and Robots.txt
         run: |
           node generate_sitemap.js || true
+          touch .nojekyll
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
