@@ -1209,31 +1209,37 @@ const generateBlogArticles = () => {
         {
             id: "2026-network-connection-service-selection-guide",
             title: "2026 网络连接服务选择指南：稳定性、多平台兼容与用户支持全解析",
-            category: "技术评测",
-            tags: ["网络连接", "选购指南", "多平台兼容", "稳定性评测", "售后支持"],
-            date: "2026-10-05",
-            views: 7150,
+            description: "2026 最新网络连接服务选购指南。从线路架构稳定性、跨平台客户端兼容度到售后客服响应三个维度深度解析，助你选出最贴合需求的高质量连接方案。",
             summary: "2026 最新网络连接服务选购指南。从线路架构稳定性、跨平台客户端兼容度到售后客服响应三个维度深度解析，助你选出最贴合需求的高质量连接方案。",
+            category: "技术评测",
+            url: "/posts/2026-network-connection-service-selection-guide.html",
+            date: "2026-10-05",
+            tags: ["网络连接", "选购指南", "多平台兼容", "稳定性评测", "售后支持"],
+            views: 7150,
             isHuanQiuFeatured: true
         },
         {
             id: "2026-airport-recommendation-guide",
             title: "2026 机场推荐与选购指南：高性价比、IEPL专线与最稳定机场导航",
+            description: "2026 最新机场推荐与导航评测。盘点环球梯、大兜云、壹界线等主流高性价比与IEPL专线稳定机场，附专属优惠码与选购避坑指南。",
+            summary: "2026 最新机场推荐与导航评测。盘点环球梯、大兜云、壹界线等主流高性价比与IEPL专线稳定机场，附专属优惠码与选购避坑指南。",
             category: "技术评测",
-            tags: ["机场推荐", "机场导航", "性价比机场", "稳定机场", "IEPL专线", "网络加速"],
+            url: "/posts/2026-airport-recommendation-guide.html",
             date: "2026-10-04",
             views: 6820,
-            summary: "2026 最新机场推荐与导航评测。盘点环球梯、大兜云、壹界线等主流高性价比与IEPL专线稳定机场，附专属优惠码与选购避坑指南。",
-            isHuanQiuFeatured: true
+            isHuanQiuFeatured: true,
+            tags: ["机场推荐", "机场导航", "性价比机场", "稳定机场", "IEPL专线", "网络加速"]
         },
         {
             id: "2026-network-stability-optimization-guide",
             title: "构建高质量网络连接体验：线路架构解析、多端配置与排错指南",
+            description: "探讨现代网络加速与稳定连接服务的核心要素：从 BGP 与 IEPL 线路优化原理到多平台客户端快速部署，并解答日常高频排错问题。",
+            summary: "探讨现代网络加速与稳定连接服务的核心要素：从 BGP 与 IEPL 线路优化原理到多平台客户端快速部署，并解答日常高频排错问题。",
             category: "技术教程",
-            tags: ["网络服务", "线路优化", "多平台支持", "连接教程", "故障排错"],
+            url: "/posts/2026-network-stability-optimization-guide.html",
             date: "2026-10-04",
             views: 5910,
-            summary: "探讨现代网络加速与稳定连接服务的核心要素：从 BGP 与 IEPL 线路优化原理到多平台客户端快速部署，并解答日常高频排错问题。"
+            tags: ["网络服务", "线路优化", "多平台支持", "连接教程", "故障排错"]
         },
         {
             id: "blog-01",
