@@ -2,7 +2,10 @@ const fs = require('fs');
 const path = require('path');
 
 // Execute data.js in VM/eval context to get AIRPORTS_DATA and REVIEWS_DATA
-const dataJsContent = fs.readFileSync('./js/data.js', 'utf8').replace('const AIRPORTS_DATA =', 'global.AIRPORTS_DATA =');
+const dataJsContent = fs.readFileSync('./js/data.js', 'utf8')
+    .replace('const AIRPORTS_DATA =', 'global.AIRPORTS_DATA =')
+    .replace('const BLOG_ARTICLES_DATA =', 'global.BLOG_ARTICLES_DATA =')
+    .replace('var REVIEWS_DATA =', 'global.REVIEWS_DATA =');
 eval(dataJsContent);
 
 const baseUrl = 'https://jichangtop1.com'; // Standard base URL for sitemap

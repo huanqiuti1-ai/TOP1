@@ -15,14 +15,14 @@ let state = {
 
 // Initialize App
 document.addEventListener('DOMContentLoaded', () => {
-    renderHome();
-    renderRecommend();
-    renderDirectory();
-    renderReviews();
-    renderBlog();
-    renderProtocols();
-    renderBlackholes();
-    renderCompareTable();
+    try { renderHome(); } catch (e) { console.error('Error rendering Home:', e); }
+    try { renderRecommend(); } catch (e) { console.error('Error rendering Recommend:', e); }
+    try { renderDirectory(); } catch (e) { console.error('Error rendering Directory:', e); }
+    try { renderReviews(); } catch (e) { console.error('Error rendering Reviews:', e); }
+    try { renderBlog(); } catch (e) { console.error('Error rendering Blog:', e); }
+    try { renderProtocols(); } catch (e) { console.error('Error rendering Protocols:', e); }
+    try { renderBlackholes(); } catch (e) { console.error('Error rendering Blackholes:', e); }
+    try { renderCompareTable(); } catch (e) { console.error('Error rendering CompareTable:', e); }
 });
 
 // Navigation Switcher
