@@ -222,13 +222,16 @@ function renderBlog() {
 
 function createBlogCardHTML(item) {
     const isHuanQiu = item.id === 'blog-04' || item.isHuanQiuFeatured;
+    const targetUrl = item.url ? item.url : 'javascript:void(0)';
+    const clickHandler = item.url ? `window.location.href='${item.url}'` : `openBlogModal('${item.id}')`;
+
     return `
-        <div class="review-card ${isHuanQiu ? 'card-featured-accent' : ''}" onclick="openBlogModal('${item.id}')" style="cursor: pointer; position: relative;">
+        <div class="review-card ${isHuanQiu ? 'card-featured-accent' : ''}" onclick="${clickHandler}" style="cursor: pointer; position: relative;">
             <div class="rev-header">
                 <div>
                     <h3 class="rev-title" style="font-size: 1.15rem; margin-bottom: 6px;">
                         ${isHuanQiu ? '<span style="color:var(--primary-cyan); font-size:0.8rem; border:1px solid var(--border-color); padding:2px 8px; border-radius:4px; margin-right:6px;">置顶推荐</span>' : ''}
-                        ${item.title}
+                        <a href="${targetUrl}" onclick="event.stopPropagation();" style="color:inherit; text-decoration:none;">${item.title}</a>
                     </h3>
                     <div class="rev-meta">
                         <span><i class="fa-solid fa-user"></i> ${item.author}</span>
