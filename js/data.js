@@ -1527,4 +1527,3 @@ const generateBlogArticles = () => {
 };
 
 const BLOG_ARTICLES_DATA = generateBlogArticles();
-var REVIEWS_DATA = BLOG_ARTICLES_DATA;
