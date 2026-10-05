@@ -6,13 +6,11 @@ on:
       - main
   workflow_dispatch:
 
-# Permissions needed for GitHub Pages deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -36,7 +34,7 @@ jobs:
 
       - name: Generate Sitemap and Robots.txt
         run: |
-          node generate_sitemap.js || true
+          node generate_sitemap.js
           touch .nojekyll
 
       - name: Setup GitHub Pages
@@ -50,3 +48,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
