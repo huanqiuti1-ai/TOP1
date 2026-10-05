@@ -151,6 +151,19 @@ body {
     user-select: none;
 }
 
+.brand-logo-img {
+    height: 36px;
+    width: 36px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+.brand-logo:hover .brand-logo-img {
+    transform: scale(1.05);
+}
+
 .logo-icon {
     width: 28px;
     height: 28px;
