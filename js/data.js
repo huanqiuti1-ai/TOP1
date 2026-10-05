@@ -1227,7 +1227,7 @@ const generateBlogArticles = () => {
             description: "2026 最新机场推荐与导航评测。盘点环球梯、大兜云、壹界线等主流高性价比与IEPL专线稳定机场，附专属优惠码与选购避坑指南。",
             summary: "2026 最新机场推荐与导航评测。盘点环球梯、大兜云、壹界线等主流高性价比与IEPL专线稳定机场，附专属优惠码与选购避坑指南。",
             category: "技术评测",
-            url: "/posts/2026-airport-recommendation-guide.html",
+            url: "posts/2026-airport-recommendation-guide.html",
             date: "2026-10-04",
             views: 6820,
             isHuanQiuFeatured: true,
@@ -1239,7 +1239,7 @@ const generateBlogArticles = () => {
             description: "探讨现代网络加速与稳定连接服务的核心要素：从 BGP 与 IEPL 线路优化原理到多平台客户端快速部署，并解答日常高频排错问题。",
             summary: "探讨现代网络加速与稳定连接服务的核心要素：从 BGP 与 IEPL 线路优化原理到多平台客户端快速部署，并解答日常高频排错问题。",
             category: "技术教程",
-            url: "/posts/2026-network-stability-optimization-guide.html",
+            url: "posts/2026-network-stability-optimization-guide.html",
             date: "2026-10-04",
             views: 5910,
             tags: ["网络服务", "线路优化", "多平台支持", "连接教程", "故障排错"]
