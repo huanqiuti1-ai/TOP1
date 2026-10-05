@@ -333,7 +333,8 @@
             <div class="filter-toolbar">
                 <div class="filter-group">
                     <span class="filter-label">文章主题：</span>
-                    <button class="filter-chip active" onclick="filterBlogCategory('all', this)">全部 (30篇)</button>
+                    <button class="filter-chip active" onclick="filterBlogCategory('all', this)">全部 (33篇)</button>
+                    <button class="filter-chip" onclick="filterBlogCategory('技术评测', this)">技术评测</button>
                     <button class="filter-chip" onclick="filterBlogCategory('2026年机场推荐', this)">2026年机场推荐</button>
                     <button class="filter-chip" onclick="filterBlogCategory('高速梯子推荐', this)">高速梯子推荐</button>
                     <button class="filter-chip" onclick="filterBlogCategory('AI上网', this)">AI上网专题</button>
@@ -345,7 +346,19 @@
 
             <div class="reviews-layout">
                 <div class="reviews-main" id="blogArticlesList">
-                    <!-- Dynamic rendering of 30 SEO blog posts -->
+                    <!-- SEO Static Links Fallback -->
+                    <noscript>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 16px;">
+                                <a href="posts/2026-network-connection-service-selection-guide.html" style="font-size: 1.1rem; font-weight: bold; color: var(--primary-cyan);">2026 网络连接服务选择指南：稳定性、多平台兼容与用户支持全解析</a>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 4px;">2026 最新网络连接服务选购指南。从线路架构稳定性、跨平台客户端兼容度到售后客服响应三个维度深度解析。</p>
+                            </li>
+                            <li style="margin-bottom: 16px;">
+                                <a href="posts/2026-airport-recommendation-guide.html" style="font-size: 1.1rem; font-weight: bold; color: var(--primary-cyan);">2026 机场推荐与选购指南：高性价比、IEPL专线与最稳定机场导航</a>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 4px;">2026 最新机场推荐与导航评测。盘点环球梯、大兜云、壹界线等主流高性价比与IEPL专线稳定机场。</p>
+                            </li>
+                        </ul>
+                    </noscript>
                 </div>
                 <aside class="reviews-sidebar">
                     <div class="sidebar-box" style="border: 1px solid #ffe600; background: linear-gradient(145deg, rgba(20,26,42,0.95), rgba(10,14,26,0.98));">
